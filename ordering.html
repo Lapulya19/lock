@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class="ordering-header">
+    <div class="container">
+      <div class="ordering-header__inner">
+        <div class="header__logo ordering-header__logo">
+          <a class="header__logo-link ordering-header__logo-link" href="#">
+            <img class="header__logo-img ordering-header__logo-img" src="img/Logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="ordering-header__phone">
+          <a class="header__phone ordering-header__phone-link" href="tel:+79665588499">+7 (966) 55 88 499</a>
+        </div>
+        <button class="ordering-header__btn">
+          <img src="img/icons/info.svg" alt="info">
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="ordering">
+      <div class="container">
+        <h2 class="ordering__title title">Оформление заказа</h2>
+        <div class="ordering__inner">
+          <form class="ordering__form">
+            <div class="ordering__item">
+              <div class="ordering__subtitle">
+                1. Контактные данные
+              </div>
+              <label class="ordering__label">
+                <div class="ordering__info">
+                  <div class="ordering__designation">Фамилия</div>
+                  <input class="ordering__input" type="text" placeholder="Зайцев" required minlength="3">
+                </div>
+                <div class="ordering__info">
+                  <div class="ordering__designation"> Имя</div>
+                  <input class="ordering__input" type="text" placeholder="Михаил" required minlength="2">
+                </div>
+                <div class="ordering__info">
+                  <div class="ordering__designation"> Телефон</div>
+                  <input class="ordering__input" type="text" placeholder="+7 (_ _ _) _ _  _ _  _ _ _" required
+                    minlength="10" maxlength="10">
+                </div>
+                <div class="ordering__info">
+                  <div class="ordering__designation"> E-mail</div>
+                  <input class="ordering__input" type="email" placeholder="example@mail.ru" required>
+                </div>
+
+              </label>
+            </div>
+
+            <div class="ordering__item">
+              <div class="ordering__subtitle">
+                2. Доставка
+              </div>
+              <div class="ordering__choice">
+                <input class="ordering__radio" id="post" type="radio" name="choice">
+                <label for="post">Почта России</label>
+              </div>
+              <div class="ordering__dropdowns">
+                <div class="ordering__dropdown dropdown">
+                  Город
+                  <button class="dropdown__button">Москва</button>
+
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item" data-value="popular">Москва</li>
+                    <li class="dropdown__item" data-value="popular">Ленинград</li>
+                    <li class="dropdown__item" data-value="popular">Ростов</li>
+                  </ul>
+                </div>
+
+                <div class="ordering__dropdown dropdown">
+                  Выберите отделение
+                  <button class="dropdown__button">Отделение №1</button>
+
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item" data-value="popular">Отделение №1</li>
+                    <li class="dropdown__item" data-value="popular">Отделение №2</li>
+                    <li class="dropdown__item" data-value="popular">Отделение №3</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ordering__choice">
+                <input class="ordering__radio" id="courier" type="radio" name="choice">
+                <label for="courier">Сдек</label>
+              </div>
+              <div class="ordering__choice">
+                <input class="ordering__radio" id="line" type="radio" name="choice">
+                <label for="line">Деловые линии</label>
+              </div>
+            </div>
+
+
+            <div class="ordering__item">
+              <div class="ordering__subtitle">
+                3. Оплата
+              </div>
+              <div class="ordering__choice">
+                <input class="ordering__radio" id="pay" type="radio" name="pay">
+                <label for="pay">Оплата при получении товара</label>
+              </div>
+              <div class="ordering__choice">
+                <input class="ordering__radio" id="payCatd" type="radio" name="pay">
+                <label for="payCatd">Банковская карта</label>
+              </div>
+
+
+            </div>
+            <div class="ordering__designation">Комментарий</div>
+            <textarea class="ordering__textarea" placeholder="Напишите комментарий"></textarea>
+          </form>
+
+          <div class="ordering__total">
+            <h2 class="ordering__total-title">Итого</h2>
+            <div class="cart-modal__item">
+              <img class="ordering__close" src="img/icons/close.svg" alt="close">
+              <div class="cart-modal__box-img">
+                <img src="img/products/1.png" alt="photo">
+              </div>
+              <div class="cart-modal__item-content">
+                <div class="cart-modal__item-title">Дверной Замок Golden Soft для офиса</div>
+                <div class="cart-modal__item-subtitle">+ Подарок:<span> “Приложение к замкам Golden Service”</span>
+                </div>
+                <div class="cart-modal__counters">
+                  <div class="cart-modal__controll cart-modal__minus" data-action="minus">-</div>
+                  <div class="cart-modal__current" data-counter>1</div>
+                  <div class="cart-modal__controll cart-modal__plus" data-action="plus">+</div>
+                  <span class="ordering__price-new">33 000₽</span>
+                  <span class="ordering__price-old">37 000₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ordering__edit">
+              <button class="ordering__edit-btn">Редактировать</button>
+              <div class="ordering__toPay">
+                К оплате:
+                <span>66 000₽</span>
+              </div>
+            </div>
+
+            <div class="ordering__equipment">
+              <div class="ordering__equipment-title">Комплектация</div>
+              <div class="ordering__equipment-inputs">
+                <div class="ordering__equipment-checkbox">
+                  <input class="ordering__equipment-input" id="installation" type="checkbox">
+                  <label for="installation">Нужна установка</label>
+                </div>
+                <div class="ordering__equipment-checkbox">
+                  <input class="ordering__equipment-input" id="setting" type="checkbox">
+                  <label for="setting">Настройка софта</label>
+                </div>
+              </div>
+            </div>
+
+            <button class="ordering__equipment-btn">Подтвердить заказ</button>
+
+            <div class="ordering__stock">
+              <div class="ordering__promo">
+                <div class="ordering__promo-text">Промокод</div>
+                <button class="ordering__promo-btn">Добавить</button>
+                <button class="ordering__promo-btn ordering__promo-close">Закрыть</button>
+              </div>
+
+              <div class="ordering__promo-code">
+                <input class="ordering__promo-input" type="text">
+                <button class="ordering__promo-button" type="submit">Применить</button>
+              </div>
+            </div>
+            <div class="ordering__agreement">Оформляя заказ, я принимаю условия <a href="#">пользовательського
+                соглашения</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

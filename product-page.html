@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__top-text">
+          Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09
+        </div>
+        <a class="header__top-link" href="#">Обратный звонок</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container">
+      <div class="header__main-inner">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo-img" src="img/Logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <nav class="menu">
+          <button class="burger-menu">
+            <span class="burger"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="http://localhost:3000/"> Главная </a>
+            </li>
+            <li class="menu__item item-dropdown">
+              <a class="menu__item-link item-link" href="#"> Каталог </a>
+              <div class="menu__list-box">
+                <ul class="menu__list-dropdown">
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Накладные электронные замки
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Врезные электронные замки
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Замки для квартиры
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#"> Замки для дома </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Замки для отелей
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Замки для офиса
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Замки для шкафчиков
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-link" href="#">
+                      Замки для раздевалок
+                    </a>
+                  </li>
+                  <li class="menu__item-dropdown">
+                    <a class="menu__dropdown-btn btn" href="http://localhost:3000/category.html#">Смотреть все</a>
+                  </li>
+                </ul>
+                <div class="menu__box-img">
+                  <img class="menu__dropdown-img" src="img/products/1.png" alt="photo" />
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#"> Оптовая продажа </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#"> О нас </a>
+            </li>
+            <a class="menu__list-phone" href="tel:+79665588499">+7 (966) 55 88 499</a>
+            <a class="menu__list-link" href="#">Обратный звонок</a>
+          </ul>
+        </nav>
+        <div class="header__box">
+          <a class="header__phone" href="tel:+79665588499">+7 (966) 55 88 499</a>
+          <div class="nav-users">
+            <button class="nav-users__btn">
+              <img class="nav-users__img" src="img/icons/like.svg" alt="like" />
+            </button>
+            <a href="#modal" class="nav-users__btn" rel="modal:open">
+              <img class="nav-users__img" src="img/icons/cart.svg" alt="cart" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-modal" id="modal">
+    <div class="cart-modal__top">
+      <div class="cart-modal__title">
+        Корзина
+      </div>
+    </div>
+    <div class="cart-modal__body">
+      <div class="cart-modal__inner">
+      
+      </div> 
+
+      <div class="cart-modal__total">
+        Итого: <span>66 000₽</span>
+      </div>
+      <div class="cart-modal__buttons">
+        <button class="cart-modal__order btn">Оформить заказ</button>
+        <button class="cart-modal__buy">Продолжить покупки</button>
+      </div>
+    </div>
+    <div class="cart-modal__additionally">
+      <div class="cart-modal__additionally-title">С этим покупают</div>
+      <div class="cart-modal__items">
+        <div class="cart-modal__additionally-inner">
+          <div class="cart-modal__box-item">
+            <div class="cart-modal__additionally-item">
+              <div class="cart-modal__additionally-box">
+                <img class="cart-modal__additionally-img" src="img/pop-products/1.jpg" alt="photo">
+              </div>
+              <div class="cart-modal__additionally-content">
+                <div class="cart-modal__additionally-subtitle">Дверной Замок Golden Soft для офиса</div>
+                <div class="cart-modal__rating rating rating_set">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" name="rating" type="radio" value="1">
+                      <input class="rating__item" name="rating" type="radio" value="2">
+                      <input class="rating__item" name="rating" type="radio" value="3">
+                      <input class="rating__item" name="rating" type="radio" value="4">
+                      <input class="rating__item" name="rating" type="radio" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">3</div>
+                </div>
+                <div class="cart-modal__rewievs">
+                  <span class="cart-modal__rewievs-num">(12)</span>
+                  отзывов
+                </div>
+                <div class="cart-modal__price">
+                  <div class="cart-modal__new-price">9 000₽</div>
+                  <div class="cart-modal__old-price">12000₽</div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="cart-modal__add" data-cart>Добавить</div>
+          </div>
+
+          <div class="cart-modal__box-item">
+            <div class="cart-modal__additionally-item">
+              <div class="cart-modal__additionally-box">
+                <img class="cart-modal__additionally-img" src="img/pop-products/1.jpg" alt="photo">
+              </div>
+              <div class="cart-modal__additionally-content">
+                <div class="cart-modal__additionally-subtitle">Дверной Замок Golden Soft для офиса</div>
+                <div class="cart-modal__rating rating rating_set">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" name="rating" type="radio" value="1">
+                      <input class="rating__item" name="rating" type="radio" value="2">
+                      <input class="rating__item" name="rating" type="radio" value="3">
+                      <input class="rating__item" name="rating" type="radio" value="4">
+                      <input class="rating__item" name="rating" type="radio" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">3</div>
+                </div>
+                <div class="cart-modal__rewievs">
+                  <span class="cart-modal__rewievs-num">(12)</span>
+                  отзывов
+                </div>
+                <div class="cart-modal__price">
+                  <div class="cart-modal__new-price">9 000₽</div>
+                  <div class="cart-modal__old-price">12000₽</div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="cart-modal__add" data-cart>Добавить</div>
+          </div>
+
+          <div class="cart-modal__box-item">
+            <div class="cart-modal__additionally-item">
+              <div class="cart-modal__additionally-box">
+                <img class="cart-modal__additionally-img" src="img/pop-products/1.jpg" alt="photo">
+              </div>
+              <div class="cart-modal__additionally-content">
+                <div class="cart-modal__additionally-subtitle">Дверной Замок Golden Soft для офиса</div>
+                <div class="cart-modal__rating rating rating_set">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" name="rating" type="radio" value="1">
+                      <input class="rating__item" name="rating" type="radio" value="2">
+                      <input class="rating__item" name="rating" type="radio" value="3">
+                      <input class="rating__item" name="rating" type="radio" value="4">
+                      <input class="rating__item" name="rating" type="radio" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">3</div>
+                </div>
+                <div class="cart-modal__rewievs">
+                  <span class="cart-modal__rewievs-num">(12)</span>
+                  отзывов
+                </div>
+                <div class="cart-modal__price">
+                  <div class="cart-modal__new-price">9 000₽</div>
+                  <div class="cart-modal__old-price">12000₽</div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="cart-modal__add" data-cart>Добавить</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item ">
+            <a class="breadcrumbs__item-link" href="http://localhost:3000">
+              <img class="breadcrumbs__img-home" src="img/icons/home.svg" alt="home">
+              <span class="breadcrumbs__designation">Главная</span></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__item-link" href="http://localhost:3000/category.html#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__item-link" href="#">Дверной Замок Golden Soft для офиса</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="product-details">
+      <div class="container">
+        <div class="product-details__inner"  data-id="01">
+          <div class="product-details__swipers" >
+            <!-- Slider main container -->
+            <div class="swiper product-details__swiper-main">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide product-details__slide-main">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+
+                <div class="swiper-slide product-details__slide-main">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+
+                <div class="swiper-slide product-details__slide-main">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+                <div class="swiper-slide product-details__slide-main">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+              </div>
+            </div>
+            <!-- Slider main container -->
+            <div thumbsSlider="" class="swiper product-details__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide product-details__slide">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+
+                <div class="swiper-slide product-details__slide">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+
+                <div class="swiper-slide product-details__slide">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+                <div class="swiper-slide product-details__slide">
+                  <img class="product-details__slide-img" src="img/swiper/1.png" alt="photo">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-details__info" >
+            <span class="product-details__info-model">JA182765</span>
+            <div class="product-details__rating rating rating_set">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" name="rating" type="radio" value="1">
+                  <input class="rating__item" name="rating" type="radio" value="2">
+                  <input class="rating__item" name="rating" type="radio" value="3">
+                  <input class="rating__item" name="rating" type="radio" value="4">
+                  <input class="rating__item" name="rating" type="radio" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3</div>
+            </div>
+            <div class="product-details__rewievs">
+              <span class="product-details__rewievs-num">(12)</span>
+              отзывов
+            </div>
+            <button class="product-details__favourites-mobile">
+              <img class="product-details__favourites-img" src="img/icons/favourites.svg" alt="favourites">
+            </button>
+            <h2 class="product-details__title">Дверной Замок Golden Soft для офиса</h2>
+            <div class="product-details__subtitle">Подходит для установки на:</div>
+            <div class="product-details__content-box info__content-box">
+              <span class="product-details__decor info__decor">Межкомнатую дверь</span>
+              <span class="product-details__decor info__decor">Межкомнатную дверь</span>
+            </div>
+            <div class="product-details__content-box">
+              <div class="product-details__choice">
+                <div class="product-details__form-group catalog__form-group">
+                  <h3 class="product-details__content-title">Комплектация</h3>
+                  <div class="product-details__dropdown catalog__dropdown dropdown">
+                    <button class="dropdown__button">Smart замок без приложения</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item" data-value="popular">Smart замок без приложения</li>
+                      <li class="dropdown__item" data-value="popular">Smart накладка на замок</li>
+                      <li class="dropdown__item" data-value="popular">Без мартизы, без приложения</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-details__content-color">
+                  <h3 class="product-details__content-title">Цвет</h3>
+                  <div class="product-details__color product-details__color--white product-details__color--active">
+                  </div>
+                  <div class="product-details__color product-details__color--black"></div>
+                  <div class="product-details__color product-details__color--yellow"></div>
+                </div>
+              </div>
+              <div class="pop-products__price">
+                <span class="pop-products__new">33 000₽</span>
+                <span class="pop-products__old">37 000₽</span>
+              </div>
+              <button class="product-details__btn btn" data-cart>Купить</button>
+              <button class="product-details__favourites-btn">В избранное</button>
+              <div class="product-details__sample sample">
+                <div class="sample__item">
+                  <button class="sample__btn">Оплата</button>
+                  <div class="sample__box">Оплата при получении товара, Картой онлайн, Google Pay, Акционная оплата
+                    картой Visa, Безналичными для юридических лиц, Безналичными для физических лиц, Apple Pay,
+                    PrivatPay, Оплата картой в отделении</div>
+                </div>
+                <div class="sample__item">
+                  <button class="sample__btn">Монтаж и доставка</button>
+                  <div class="sample__box">Оплата при получении товара, Картой онлайн, Google Pay, Акционная оплата
+                    картой Visa, Безналичными для юридических лиц, Безналичными для физических лиц, Apple Pay,
+                    PrivatPay, Оплата картой в отделении</div>
+                </div>
+                <div class="sample__item">
+                  <button class="sample__btn">Гарантии и выгода</button>
+                  <div class="sample__box">Оплата при получении товара, Картой онлайн, Google Pay, Акционная оплата
+                    картой Visa, Безналичными для юридических лиц, Безналичными для физических лиц, Apple Pay,
+                    PrivatPay, Оплата картой в отделении</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-details__tabs">
+          <button class="product-details__tab product-details__tab--active"
+            data-tab-name="tab-characteristic">Характеристики</button>
+          <button class="product-details__tab" data-tab-name="tab-descr">Описание</button>
+          <button class="product-details__tab" data-tab-name="tab-comments">Отзывы</button>
+        </div>
+        <div class="product-details__tab-box product-details__tab-box--active tab-characteristic">
+          <div class="product-details__characteristic">
+            <div class="product-details__characteristic-content">
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Память на количество карт
+                </div>
+                <div class="product-details__characteristic-info">2033</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Приложение
+                </div>
+                <div class="product-details__characteristic-info">Нет</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Материал
+                </div>
+                <div class="product-details__characteristic-info">Сталь, силиконовые вставки</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Цвет
+                </div>
+                <div class="product-details__characteristic-info">Черный, хром</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Питание
+                </div>
+                <div class="product-details__characteristic-info">DC 6V, 4 AAA</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Разблокировка
+                </div>
+                <div class="product-details__characteristic-info">Пин-код, карта или браслет Mifaire, ключ, приложение, отпечаток пальца</div>
+              </div>
+
+            </div>
+
+            <div class="product-details__characteristic-content">
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Тип двери
+                </div>
+                <div class="product-details__characteristic-info">Деревянная, металлическая</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Толщина двери
+                </div>
+                <div class="product-details__characteristic-info">38-55 мм</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Размеры
+                </div>
+                <div class="product-details__characteristic-info">302мм * 43мм * 22.55мм</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Вес
+                </div>
+                <div class="product-details__characteristic-info">2.5 кг</div>
+              </div>
+
+              <div class="product-details__characteristic-box">
+                <div class="product-details__characteristic-title">
+                  Комплектация
+                </div>
+                <div class="product-details__characteristic-info">Без мартизы, с мартизой</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="product-details__tab-box tab-descr">
+            <div class="product-details__descr">
+              <div class="product-details__descr-content">
+                <p class="product-details__descr-text">
+                  Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии,
+                  красивые
+                  формы – этот замок сразу заявляет о своем высоком статусе. Изысканный черный цвет корпуса в обрамлении
+                  из золота мгновенно притягивает взгляды. Функционален, удобен в работе и легок в уходе: для сохранения
+                  блеска достаточно лишь протереть поверхность салфеткой.
+
+                  <span class="product-details__descr-indent">Подходит для установки на деревянную/межкомнатную
+                    дверь.</span>
+                </p>
+                <div class="product-details__descr-title">
+                  Преимущества умного замка от Golden Soft с приложением:
+                </div>
+                <div class="product-details__descr-box info__content-box">
+                  <span class="product-details__descr-decor info__decor">Минимизирует кражи среди персонала</span>
+                  <span class="product-details__descr-decor info__decor">Сложно взломать, высокая надежность</span>
+                  <span class="product-details__descr-decor info__decor">Можно отказаться от создания физических карт
+                    или
+                    ключей и высылать электронный ключ новым сотрудникам прямо на смартфон</span>
+                  <span class="product-details__descr-decor info__decor">Отслеживание статистики открытий с информацией
+                    о
+                    каждом открывавшем замок человеке</span>
+                </div>
+                <p class="product-details__descr-text">
+                  Каждый ключ записывается в память замка с уникальным токеном, что делает почти невозможным подделку
+                  цифрового ключа. Замки программируются с помощью Bluetooth-соединения с приложением на вашем
+                  устройстве
+                  или с помощью мастер – карты, которая переводит замок в режим программирования, а после получения
+                  ключа
+                  вы сможете выставить для себя уникальный пин-код или настроить отпечаток пальца прямо через
+                  приложение.
+                  Также, вы всегда можете выписывать карты или браслеты стандарта Mifare с помощью Энкодера в связке с
+                  приложением на ПК либо Android
+                </p>
+              </div>
+              <img class="product-details__descr-img" src="img/products/2.png" alt="photo">
+            </div>
+          </div>
+
+          <div class="product-details__tab-box tab-comments">
+            <div class="product-details__comments">
+              <div class="product-details__comment-inner">
+                <a href="#popup" class="product-details__comment-button btn product-details__button-mobile" rel="modal:open">Оставить отзыв</a>
+                <div class="product-details__comment-items">
+                  <div class="product-details__comment-item">
+                    <div class="product-details__comment-top">
+                      <div class="product-details__comment-name">Андрей Попенко</div>
+                      <div class="product-details__comment-date">20 августа, 2021</div>
+                      <div class="product-details__comment-rating rating rating_set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input class="rating__item" name="rating" type="radio" value="1">
+                            <input class="rating__item" name="rating" type="radio" value="2">
+                            <input class="rating__item" name="rating" type="radio" value="3">
+                            <input class="rating__item" name="rating" type="radio" value="4">
+                            <input class="rating__item" name="rating" type="radio" value="5">
+                          </div>
+                        </div>
+                        <div class="rating__value">3</div>
+                      </div>
+                    </div>
+                    <p class="product-details__comment-text">Et feugiat eu scelerisque nulla mattis. At et enim dui
+                      mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et
+                      feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                    <div class="product-details__comment-box">
+                      <button class="product-details__comment-reply">
+                        Ответить
+                      </button>
+                      <button class="product-details__comment-btn">
+                        <span class="product-details__comment-num">1</span> комментарий
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="product-details__comment-item">
+                    <div class="product-details__comment-top">
+                      <div class="product-details__comment-name">Андрей Попенко</div>
+                      <div class="product-details__comment-date">20 августа, 2021</div>
+                      <div class="product-details__comment-rating rating rating_set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input class="rating__item" name="rating" type="radio" value="1">
+                            <input class="rating__item" name="rating" type="radio" value="2">
+                            <input class="rating__item" name="rating" type="radio" value="3">
+                            <input class="rating__item" name="rating" type="radio" value="4">
+                            <input class="rating__item" name="rating" type="radio" value="5">
+                          </div>
+                        </div>
+                        <div class="rating__value">3</div>
+                      </div>
+                    </div>
+                    <p class="product-details__comment-text">Et feugiat eu scelerisque nulla mattis. At et enim dui
+                      mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et
+                      feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                    <div class="product-details__comment-box">
+                      <button class="product-details__comment-reply">
+                        Ответить
+                      </button>
+                      <button class="product-details__comment-btn">
+                        <span class="product-details__comment-num">1</span> комментарий
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="product-details__comment-item">
+                    <div class="product-details__comment-top">
+                      <div class="product-details__comment-name">Андрей Попенко</div>
+                      <div class="product-details__comment-date">20 августа, 2021</div>
+                      <div class="product-details__comment-rating rating rating_set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input class="rating__item" name="rating" type="radio" value="1">
+                            <input class="rating__item" name="rating" type="radio" value="2">
+                            <input class="rating__item" name="rating" type="radio" value="3">
+                            <input class="rating__item" name="rating" type="radio" value="4">
+                            <input class="rating__item" name="rating" type="radio" value="5">
+                          </div>
+                        </div>
+                        <div class="rating__value">3</div>
+                      </div>
+                    </div>
+                    <p class="product-details__comment-text">Et feugiat eu scelerisque nulla mattis. At et enim dui
+                      mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et
+                      feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                    <div class="product-details__comment-box">
+                      <button class="product-details__comment-reply">
+                        Ответить
+                      </button>
+                      <button class="product-details__comment-btn">
+                        <span class="product-details__comment-num">1</span> комментарий
+                      </button>
+                    </div>
+                  </div>
+                  <button class="product-details__comment-more">Показать еще</button>
+                </div>
+                  <form class="product-details__comment-form">
+                    <div class="product-details__mobile-form">
+                      <div class="product-details__mobile-title">Оставить отзыв</div>
+                      <button class="product-details__mobile-close"><img class="product-details__mobile-img" src="img/icons/close.svg" alt="close"></button>
+                    </div>
+                    <div class="product-details__comment-title">Ваша оценка</div>
+                    <div class="product-details__form-rating form-rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__item" name="rating" type="radio" value="1">
+                          <input class="rating__item" name="rating" type="radio" value="2">
+                          <input class="rating__item" name="rating" type="radio" value="3">
+                          <input class="rating__item" name="rating" type="radio" value="4">
+                          <input class="rating__item" name="rating" type="radio" value="5">
+                        </div>
+                      </div>
+                      <div class="rating__value">0</div>
+                    </div>
+                    <div class="product-details__comment-title">Ваше имя</div>
+                    <input class="product-details__comment-input" type="text" placeholder="Введите Ваше имя">
+                    <div class="product-details__comment-title">Ваш Email</div>
+                    <input class="product-details__comment-input" type="text" placeholder="Введите Ваш Email">
+  
+                    <div class="product-details__comment-title">Ваш комментарий</div>
+                    <textarea class="product-details__comment-textarea" placeholder="Введите Ваш комментарий"></textarea>
+  
+                    <button class="product-details__comment-button btn" type="submit">Оставить отзыв</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <form class="popup__form">
+            <div class="product-details__mobile-form">
+              <div class="product-details__mobile-title">Оставить отзыв</div>
+            </div>
+            <div class="product-details__comment-title">Ваша оценка</div>
+            <div class="product-details__form-rating form-rating rating rating_set">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" name="rating" type="radio" value="1">
+                  <input class="rating__item" name="rating" type="radio" value="2">
+                  <input class="rating__item" name="rating" type="radio" value="3">
+                  <input class="rating__item" name="rating" type="radio" value="4">
+                  <input class="rating__item" name="rating" type="radio" value="5">
+                </div>
+              </div>
+              <div class="rating__value">0</div>
+            </div>
+            <div class="product-details__comment-title">Ваше имя</div>
+            <input class="product-details__comment-input" type="text" placeholder="Введите Ваше имя">
+            <div class="product-details__comment-title">Ваш Email</div>
+            <input class="product-details__comment-input" type="text" placeholder="Введите Ваш Email">
+
+            <div class="product-details__comment-title">Ваш комментарий</div>
+            <textarea class="product-details__comment-textarea" placeholder="Введите Ваш комментарий"></textarea>
+
+            <button class="product-details__comment-button btn" type="submit">Оставить отзыв</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="pop-products">
+      <div class="container">
+        <div class="swiper pop-products__swiper">
+          <h2 class="pop-products__title title">Вы недавно просмотрели</h2>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="pop-products__item catalog__item">
+
+                <div class="pop-products__box" style="background-image: url('img/pop-products/1.jpg')">
+                  <div class="pop-products__existence">В наличии</div>
+                  <div class="pop-products__sale">sale</div>
+                  <div class="pop-products__surprice">Подарок</div>
+                </div>
+                <div class="pop-products__content">
+                  <div class="pop-products__subtitle">
+                    <a class="pop-products__link" href="#">Дверной Замок Golden Soft для отеля</a>
+                  </div>
+                  <div class="pop-products__price">
+                    <span class="pop-products__new">33 000₽</span>
+                    <span class="pop-products__old">37 000₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="pop-products__item catalog__item">
+
+                <div class="pop-products__box" style="background-image: url('img/pop-products/2.jpg')">
+                  <div class="pop-products__existence no-existence">Не в наличии</div>
+                  <div class="pop-products__sale">sale</div>
+                  <div class="pop-products__surprice">Подарок</div>
+                </div>
+                <div class="pop-products__content">
+                  <div class="pop-products__subtitle">
+                    <a class="pop-products__link" href="#">Вариативный замок Golden Soft для отеля</a>
+                  </div>
+                  <div class="pop-products__price">
+                    <span class="pop-products__new">7 000₽</span>
+                    <span class="pop-products__old">8 000₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="pop-products__item catalog__item ">
+
+                <div class="pop-products__box" style="background-image: url('img/pop-products/3.jpg')">
+                  <div class="pop-products__existence">В наличии</div>
+                  <div class="pop-products__sale">sale</div>
+                  <div class="pop-products__surprice">Подарок</div>
+                </div>
+                <div class="pop-products__content">
+                  <div class="pop-products__subtitle">
+                    <a class="pop-products__link" href="#">Дверной Замок Golden Soft для офиса</a>
+                  </div>
+                  <div class="pop-products__price">
+                    <span class="pop-products__new">33 000₽</span>
+                    <span class="pop-products__old">39 000₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pop-products__item catalog__item">
+
+                <div class="pop-products__box" style="background-image: url('img/pop-products/4.jpg')">
+                  <div class="pop-products__existence">В наличии</div>
+                  <div class="pop-products__sale">sale</div>
+                  <div class="pop-products__surprice">Подарок</div>
+                </div>
+                <div class="pop-products__content">
+                  <div class="pop-products__subtitle">
+                    <a class="pop-products__link" href="#">Дверной Замок Golden Soft для офиса</a>
+                  </div>
+                  <div class="pop-products__price">
+                    <span class="pop-products__new">9 000₽</span>
+                    <span class="pop-products__old">12 000₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-button-prev pop-products__prev"></div>
+
+          <div class="swiper-button-next pop-products__next"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <div class="info__box">
+            <div class="info__content">
+              <h3 class="info__title">Eget quis quam metus, scelerisque.</h3>
+              <p class="info__text">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa
+                porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <div class="info__content-box">
+                <span class="info__decor">Межкомнатую дверь</span>
+                <span class="info__decor">Межкомнатую дверь</span>
+                <span class="info__decor">Деревянную дверь</span>
+                <span class="info__decor">Деревянную дверь</span>
+              </div>
+              <p class="info__text">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo.
+                Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque
+                malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+            <img class="info__img" src="img/info/1.jpg" alt="photo">
+          </div>
+
+          <div class="info__box">
+            <img class="info__img" src="img/info/2.jpg" alt="photo">
+            <div class="info__content">
+              <h3 class="info__title">Eget quis quam metus, scelerisque.</h3>
+              <p class="info__text">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa
+                porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <p class="info__text">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo.
+                Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque
+                malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <h2 class="contact-us__title title">Мы Вам перезвоним</h2>
+        <p class="contact-us__text">Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам
+          перезвоним.</p>
+        <form class="contact-us__form">
+          <input class="contact-us__input" type="text" placeholder="Ваше имя">
+          <input class="contact-us__input" type="text" placeholder="Ваш Email">
+          <button class="contact-us__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__item footer__item-logo">
+          <img class="footer__logo" src="img/footer-logo.svg" alt="logo">
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="img/social/vk.svg" alt="vk-icon">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="img/social/twitter.svg" alt="twitter">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="img/social/facebook.svg" alt="facebook">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__info">
+          <div class="footer__item footer__item-nav">
+            <h3 class="footer__title">
+              Навигация
+            </h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Каталог
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  Оптовая продажа
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  О нас
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__item footer__item-contacts">
+            <h3 class="footer__title">
+              Наши контакты
+            </h3>
+            <div class="footer__contacts">
+             <div class="footer__contact-item">
+                <span class="footer__contact-text">Телефоны</span>
+                <a class="footer__phone footer__contact" href="tel:+79885650038">
+                  +7 (988) 565 00 38
+                </a>
+                <a class="footer__phone footer__contact" href="tel:+375336628256">
+                  +375 33 662 82 56
+                </a>
+             </div>
+              <div class="footer__contact-item">
+                <span class="footer__contact-text">Email</span>
+                <a class="footer__email footer__contact" href="mailto:vladpertcev@mail.ru">
+                  vladpertcev@mail.ru
+                </a>
+                <a class="footer__email footer__contact" href="mailto:korobko416@gmail.com">
+                  korobko416@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer__item footer__item-address">
+            <h3 class="footer__title">
+              Наш адрес
+            </h3>
+            <div class="footer__address">
+              Россия,<br> Ростов-на-Дону ул. Богачева, 16
+            </div>
+          </div>
+  
+          <div class="footer__item">
+            <h3 class="footer__title">
+              Информация
+            </h3>
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">
+                  Гарантии
+                </a>
+              </li>
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">
+                  Возврат товара
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        © 2021 Golden Soft All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
