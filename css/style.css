@@ -3310,6 +3310,10 @@ a {
   top: 0;
 }
 
+#popup{
+  display: none;
+}
+
 .popup__form {
   padding: 20px 16px;
 }
